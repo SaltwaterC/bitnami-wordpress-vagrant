@@ -26,6 +26,22 @@ end
 desc 'Recreates the machine from scratch and drops to a shell'
 task redo: [:clean, :up, :ssh]
 
+desc 'Runs "vagrant reload"'
+task :reload do
+  system 'rm .vagrant/machines/default/virtualbox/synced_folders'
+  system 'vagrant reload --provision'
+end
+
+desc 'Runs "vagrant provision"'
+task :provision do
+  system 'vagrant provision'
+end
+
+desc 'Purges the Vagrant box'
+task :purge do
+  system 'vagrant ssh -c "sudo purge"'
+end
+
 desc 'Packages the Vagrant box'
 task :package do
   system 'vagrant package --output bitnami-wordpress-' +
@@ -33,3 +49,4 @@ task :package do
 end
 
 task default: [:rubocop]
+task release: [:purge, :package]
