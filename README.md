@@ -10,3 +10,4 @@ the Bitnami WordPress version.
 
     vagrant box add SaltwaterC/bitnami-wordpress
     vagrant init SaltwaterC/bitnami-wordpress
+    vagrant up
