@@ -1,10 +1,8 @@
-# Bitnami WordPress Vagrant box
+# About
 
-This is the source for creating the Bitnami WordPress Vagrant box which is
-hosted by atlas.hashicorp.com.
+This is the source for creating the [Bitnami WordPress Vagrant](https://atlas.hashicorp.com/SaltwaterC/boxes/bitnami-wordpress) box which is hosted by atlas.hashicorp.com.
 
-The Vagrant provider for this box is virtualbox. The version actually mirrors
-the Bitnami WordPress version.
+The Vagrant provider for this box is virtualbox. The version actually mirrors the Bitnami WordPress version.
 
 ## Install
 
