@@ -8,5 +8,5 @@ the Bitnami WordPress version.
 
 ## Install
 
-   vagrant box add SaltwaterC/bitnami-wordpress
-   vagrant init SaltwaterC/bitnami-wordpress
+    vagrant box add SaltwaterC/bitnami-wordpress
+    vagrant init SaltwaterC/bitnami-wordpress
