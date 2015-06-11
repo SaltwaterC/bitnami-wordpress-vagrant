@@ -1,0 +1,7 @@
+name 'bitnami-wordpress'
+maintainer 'Stefan Rusu'
+maintainer_email 'saltwaterc@gmail.com'
+license 'MIT'
+description 'Installs/Configures bitnami-wordpress'
+long_description 'Installs/Configures bitnami-wordpress'
+version '0.1.0'
