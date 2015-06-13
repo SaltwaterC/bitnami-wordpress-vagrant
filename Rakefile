@@ -49,4 +49,6 @@ task :package do
 end
 
 task default: [:rubocop]
+
+desc 'Does a Bitnami WordPress Vagrant box release'
 task release: [:up, :purge, :package]
