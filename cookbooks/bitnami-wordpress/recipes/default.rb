@@ -38,3 +38,8 @@ cookbook_file 'usr.local.bin.purge' do
   path '/usr/local/bin/purge'
   mode '0755'
 end
+
+cookbook_file 'etc.profile.d.bitnami.sh' do
+  path '/etc/profile.d/bitnami.sh'
+  mode '0644'
+end
