@@ -49,4 +49,4 @@ task :package do
 end
 
 task default: [:rubocop]
-task release: [:purge, :package]
+task release: [:up, :purge, :package]
