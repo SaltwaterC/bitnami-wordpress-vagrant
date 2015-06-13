@@ -21,22 +21,20 @@ unless File.directory? '/opt/bitnami'
 
   execute installer + ' --mode unattended --base_password bitnami '\
     '--baseinstalltype production --prefix /opt/bitnami'
-
   execute bnconfig + ' --appurl /'
-  execute bnconfig + ' --disable_banner 1'
 
   file installer do
     action :delete
   end
 
-  link '/etc/init.d/wordpress' do
+  link '/etc/init.d/bitnami' do
     to '/opt/bitnami/ctlscript.sh'
   end
 
-  execute 'update-rc.d wordpress defaults'
+  execute 'update-rc.d bitnami defaults'
 end
 
-cookbook_file 'purge' do
+cookbook_file 'usr.local.bin.purge' do
   path '/usr/local/bin/purge'
   mode '0755'
 end
